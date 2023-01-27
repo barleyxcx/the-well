@@ -1,0 +1,53 @@
+body {
+    background-color:rgb(245, 245, 245);
+    color:rgb(72, 72, 72);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+p {
+    background-color:rgb(220, 219, 236);
+    border: 1px solid;
+    padding: 18px;
+    /* margin: 30px auto;
+    width: 600px; */
+    text-align: center;
+    /* height: 200px; */
+}
+
+a {
+    color:palevioletred;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(45, 3, 84);
+    text-decoration: line-through;
+}
+
+.special {
+    font-size: 25px;
+}
+
+.new {
+    background-color: black;
+}
+
+/* 
+    
+    NOTES --- 
+    
+    you can use background color to check and see how much space your element is taking up. transparent colors are better with RGB values
+
+    padding creates internal space, moves content inward
+
+    margin creates external space, outside of the border
+    margin space will overlap where they do overlap so instead of vertical space between them being 100px it collapses into 50px (determined amount)
+
+    "cmd + ?" is shortcut for commenting
+
+    you probably don't have to set the height tbh because the web sort of places that in its structure naturally although there are specific use cases
+
+    in margin to center the elements you just use 0 auto, we'll find out what this actually is later. auto sets horizontal center, they automatically fill in whatever they need to. margin 0 auto only works if max-width is set to something.
+
+*/
