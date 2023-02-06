@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>ode to partying</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <script>
+            var counter = 1;
+            setInterval(function(){
+            var myCanvas = document.getElementById('myCanvas');
+            var ctx = myCanvas.getContext('2d');
+            var img = new Image;
+            img.onload = function(){
+            ctx.drawImage(
+                img,
+                    0,0, //where grab of original begins top-left
+                    img.width,img.height, // amount of grab
+                    0,0, //where to place grab
+                    300,150 // size of final grab
+                );
+            };
+    
+            // I had 4 images in my folder so I checked with 4.
+            if(counter == 110) counter = 1;
+            
+            // assuming that your image sequence is named 1.jpg, 2.jpg, 3.jpg ....
+            img.src = "images/" + "PIC_" + counter + '.jpg';
+    
+            counter++;
+            
+            // I set the interval to 100 ms, increase or decrease as per your need.
+            // If you don't want loop use clearTimeout()
+            }, 150);
+            </script>
+    </head>
+
+    <body>
+        <marquee scrollamount="20">my favorite moment of the night is <span class ="when">when</span> it's all light sound and vision enrapturing when the cold air hits me as I step out the uber when the week stretches into a filament I swallow when the absence is not deadly when novelty is a fool's burden when i'm not afraid of right now when I'm sweaty forgetting and gossamer possibility when he brushes past me and puts his hand on the small of my back and I remember I have a small of my back when it's not about being touched it's about remembering that I can be touched when it's the sweet bliss of oblivion when it's not about knowing better it's about knowing nothing when I do it every weekend like a ritual when the room feels bigger than it ever could be when the club is a pilgrimage site when i'm locked in time with the bellow of a kick drum when i'm with my friends when I'm the disco ball, the grid of mirrors made up of only reflections </marquee>
+
+        <div class="container">
+        <canvas id="myCanvas"></canvas>
+        </div>
+
+    </body>
+
+    
+</html>

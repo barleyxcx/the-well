@@ -1,0 +1,28 @@
+<doctype html>
+<html>
+
+<head>
+    <title>box model</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="content-box">content box</div>
+     <!--div is a generic block level element. it has no inherent meaning to it. It's not expecting text here. A div can be used for structural element that you define in CSS, you can draw things with DIV by giving them bg colors shaping their colors arranging them in certain ways. Recommended to use semantic elements when possible so paragraph tag when paragraph is what's being used. DIV doesn't have default margins.-->
+     <div class="border-box">border box</div>
+
+    <div class="circle">you never have to write box-sizing: content-box because it's already being given that property. So the content-box gets smaller in order to accomodate for the padding and border sizes. MOST people are using border-box to size their elements it helps with responsive design.
+    </div>
+
+</body>
+
+
+
+
+
+</html>

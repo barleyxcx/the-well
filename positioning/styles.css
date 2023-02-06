@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.box {
+    background-color:darkolivegreen;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    margin: 10px;
+}
+
+.relative {
+    background-color:bisque;
+    position: relative;
+    bottom: -60px;
+    right: -90px;
+    /* uses the direction listed as the origin for the movement. So top is the origin and then it's moved down 30px RELATIVE to that origin. */
+}
+
+.fixed {
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+.absolute {
+    background-color: lavender;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    /* absolute positions in relation to the document body if its not contained inside of a container that has a position on it */
+}
+
+.sticky {
+    background-color: darksalmon;
+    position: sticky;
+    top: 10px;
+}
+
+.smiley {
+    background-color: lightgreen;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* In regards to perfectly center elements, keep in mind that they are oriented from the top left vertex of the shape*/
+    transform: translate(-50%, -50%);
+}
+
+.eye {
+    background-color: thistle;
+    width: 20px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 100%;
+    position: absolute;
+    top: 40px;
+}
+
+.left {
+    left: 80px;
+}
+
+.right {
+    right: 55px;
+}
+
+.mouth {
+    width: 40px;
+    background-color:thistle;
+    height: 11px;
+    border: 1px solid;
+    transform:rotate(15deg);
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+}
+
+.eyebrow-left {
+    background-color: thistle;
+    width: 40px;
+    height: 9px;
+    border: 1px solid;
+    position: absolute;
+    top: 25px;
+    left: 75px;
+    transform:rotate(15deg);
+}
+.eyebrow-right {
+    background-color: thistle;
+    width: 40px;
+    height: 9px;
+    border: 1px solid;
+    position: absolute;
+    top: 19px;
+    right: 25px;
+    transform:rotate(-15deg);
+}

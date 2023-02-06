@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <title>party archive</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <script>
+            var counter = 1;
+            setInterval(function(){
+            var myCanvas = document.getElementById('myCanvas');
+            var ctx = myCanvas.getContext('2d');
+            var img = new Image;
+            img.onload = function(){
+            ctx.drawImage(
+                img,
+                    0,0, //where grab of original begins top-left
+                    img.width,img.height, // amount of grab
+                    0,0, //where to place grab
+                    300,150 // size of final grab
+                );
+            };
+    
+            // I had 4 images in my folder so I checked with 4.
+            if(counter == 110) counter = 1;
+            
+            // assuming that your image sequence is named 1.jpg, 2.jpg, 3.jpg ....
+            img.src = "images/" + "PIC_" + counter + '.jpg';
+    
+            counter++;
+            
+            // I set the interval to 100 ms, increase or decrease as per your need.
+            // If you don't want loop use clearTimeout()
+            }, 150);
+            </script>
+    </head>
+
+    <body>
+       
+
+        <div class="container">
+            <!-- <a href="about.html">♥</a> -->
+            <canvas id="myCanvas"></canvas>
+            <div class="text-container">
+                <p>my favorite moment of the night is<br>
+                    <span class ="when">when</span> it's all light sound and blurry vision enrapturing<br>
+                    <span class ="when">when</span> the cold air hits me as I step out the uber<br>
+                    <span class ="when">when</span> time thins into a filament I swallow<br>
+                    <span class ="when">when</span> the absence of living is not deadly<br>
+                    <span class ="when">when</span> novelty is a fool's burden<br>
+                    <span class ="when">when</span> i'm not afraid<br>
+                    <span class ="when">when</span> I'm sweaty forgetting and gossamer possibility<br>
+                    <span class ="when">when</span> he brushes past me and puts his hand on the small of my back<br>
+                    <span class ="when">when</span> I remember I have a small of my back<br>
+                    <!-- <span class ="when">when</span> it's not being touched it's remembering that I can be touched <br> -->
+                    <span class ="when">when</span> it's the sweet bliss of oblivion<br>
+                    <span class ="when">when</span> it's not about knowing better it's about knowing nothing<br>
+                    <span class ="when">when</span> I do it every weekend like a ritual<br>
+                    <span class ="when">when</span> our gazes lock, a dance of power<br>
+                    <span class ="when">when</span> you be/hold me and I be/hold you<br>
+                    <span class ="when">when</span> I know who I am because you told me so<br>
+                    <span class ="when">when</span> the club is a pilgrimage site<br>
+                    <span class ="when">when</span> i'm locked in time with the bellow of a kick drum<br>
+                    <span class ="when">when</span> I'm stuck in sound and vision something like religion<br>
+                    <span class ="when">when</span> i'm with my friends<br>
+                    <span class ="when">when</span> I'm the disco ball, the grid of mirrors made up of reflections<br>
+                    <span class ="when">when</span> you and i become enmeshed.<br>
+                    </p>
+            </div>
+        </div>
+
+    </body>
+
+    
+</html>

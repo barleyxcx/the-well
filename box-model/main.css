@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
+
+body {
+    background-color: mistyrose;
+    margin:0;
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+}
+
+.content-box {
+    background-color:thistle;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    border: 20px solid ghostwhite;
+    margin: 50px;
+}
+
+.border-box {
+    background-color:thistle;
+    width: 200px;
+    height: 200px;
+    /* not setting height will let it adapt to the height of the box as content is added to it, otherwise it'll spill out */
+    padding: 30px;
+    border: 20px solid ghostwhite;
+    margin: 50px;
+    /* you never have to write box-sizing: content-box because it's already being given that property. So the content-box gets smaller in order to accomodate for the padding and border sizes. MOST people are using border-box to size their elements it helps with responsive design. */
+}
+
+.circle {
+    background-color:darkmagenta;
+    width: 400px;
+    height: 400px;
+    border-radius: 100% 100% 0 0;
+    padding: 50px;
+}
