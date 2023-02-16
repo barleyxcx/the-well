@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    background-color: lightblue;
+    padding: 1em;
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* space-evenly distributes evenly amongst the margins and the items
+    space-between evens out the space between the items, but NOT the margins 
+    center puts the items in the center asf
+    */
+    align-items: center;
+    /* If i'm understanding properly justify-content is the width axis and align-items is the height axis */
+    align-content: center;
+    gap: 20px;
+}
+
+.item {
+    background: lightgreen;
+    border: 1px solid;
+    width: 300px;
+    text-align: center;
+}
+
+.special {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink {
+    background-color: pink;
+    padding: 10px;
+    border: 1px solid;
+}

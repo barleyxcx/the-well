@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: rgb(60, 83, 236);
+}
+
+.image1:hover {
+    position: relative;
+    text-decoration: underline;
+}
+
+.image1:hover:after {
+    content: url(images/1.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -80px; /* change this value to one that suits you */
+    top: -32px; /* change this value to one that suits you */
+}
+
+.image2:hover {
+    position: relative;
+    text-decoration: underline;
+}
+
+.image2:hover:after {
+    content: url(images/2.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -80px; /* change this value to one that suits you */
+    top: -32px; /* change this value to one that suits you */
+}
+
+.image3:hover {
+    position: relative;
+    text-decoration: underline;
+}
+
+.image3:hover:after {
+    content: url(images/3.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -80px; /* change this value to one that suits you */
+    top: -32px; /* change this value to one that suits you */
+}
+
+.image4:hover {
+    position: relative;
+    text-decoration: underline;
+}
+
+.image4:hover:after {
+    content: url(images/4.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -80px; /* change this value to one that suits you */
+    top: -32px; /* change this value to one that suits you */
+}
+
+.image5:hover {
+    position: relative;
+    text-decoration: underline;
+}
+
+.image5:hover:after {
+    content: url(images/5.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -80px; /* change this value to one that suits you */
+    top: -32px; /* change this value to one that suits you */
+}
+
+.image6:hover {
+    position: relative;
+    text-decoration: underline;
+}
+
+.image6:hover:after {
+    content: url(images/6.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -80px; /* change this value to one that suits you */
+    top: -32px; /* change this value to one that suits you */
+}
+
+.image7:hover {
+    position: relative;
+    text-decoration: underline;
+}
+
+.image7:hover:after {
+    content: url(images/7.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -80px; /* change this value to one that suits you */
+    top: -32px; /* change this value to one that suits you */
+}
+
+.image8:hover {
+    position: relative;
+    text-decoration: underline;
+}
+
+.image8:hover:after {
+    content: url(images/8.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -80px; /* change this value to one that suits you */
+    top: -32px; /* change this value to one that suits you */
+}
+
+.image9:hover {
+    position: relative;
+    text-decoration: underline;
+}
+
+.image9:hover:after {
+    content: url(images/9.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -80px; /* change this value to one that suits you */
+    top: -32px; /* change this value to one that suits you */
+}
+
+.image10:hover {
+    position: relative;
+    text-decoration: underline;
+}
+
+.image10:hover:after {
+    content: url(images/10.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -80px; /* change this value to one that suits you */
+    top: -32px; /* change this value to one that suits you */
+}
+
+.image11:hover {
+    position: relative;
+    text-decoration: underline;
+}
+
+.image11:hover:after {
+    content: url(images/11.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -80px; /* change this value to one that suits you */
+    top: -32px; /* change this value to one that suits you */
+}
+
+.image12:hover {
+    position: relative;
+    text-decoration: underline;
+}
+
+.image12:hover:after {
+    content: url(images/12.jpg); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: -80px; /* change this value to one that suits you */
+    top: -32px; /* change this value to one that suits you */
+}
+
+
+a {
+    color: aliceblue;
+}
+
+.about {
+    padding: 2em;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    padding: 5em;
+    align-items: stretch;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    flex-wrap: wrap;
+    color:aliceblue;
+}
+
+.upper {
+    /* background: thistle; */
+    /* border: 1px solid grey; */
+    /* width: 50%; */
+    height: 33%;
+    display: flex;
+    /* gap: 0.9em; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.upper-item {
+    height: 100%;
+    /* border-style: solid;
+    border-width: 0px 0.5px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+
+.middle {
+    /* border: 0.5px solid grey; */
+    /* background: red; */
+    /* width: 50%; */
+    height: 33%;
+    display: flex;
+    /* gap: 0.9em; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.middle-item {
+    height: 100%;
+    /* border-style: solid;
+    border-width: 0px 0.5px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+
+.lower {
+    display: flex;
+    /* background: green; */
+    /* width: 50%; */
+    height: 33%;
+    /* border: 1px solid grey; */
+    /* gap: 0.9em; */
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.lower-item {
+    /* border-style: solid; */
+    /* border-width: 0px 0.5px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.rhyme {
+    font-style: italic;
+}
+
+p {
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    padding: 2em;
+}
+
+.about {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
