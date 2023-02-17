@@ -4,36 +4,44 @@
 <head>
     <title>grid-zal</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function showGrid() {
+        document.getElementById("grid").classList.toggle("active");
+    }
+    </script>
 </head>
 
 <body>
     <a href ="about.html" class="about">--</a>
-    <div class="main-container">
+
+    <button onclick="showGrid()">switch</button>
+    
+    <div id="grid" class="main-container">
         
         <div class="upper">
-            <div class="upper-item">And</div>
-            <div class="upper-item">what</div>
-            <div class="upper-item">of</div>
-            <div class="upper-item">the</div>
-            <div class="upper-item">wretch-</div>
-            <div class="upper-item">ed</div>
-            <div class="upper-item">flag?</div>
-            <div class="upper-item">Cloth</div>
-            <div class="upper-item">tears</div>
-            <div class="upper-item">to</div>
+            <div class="grid-item">And</div>
+            <div class="grid-item">what</div>
+            <div class="grid-item">of</div>
+            <div class="grid-item">the</div>
+            <div class="grid-item">wretch-</div>
+            <div class="grid-item">ed</div>
+            <div class="grid-item">flag?</div>
+            <div class="grid-item">Cloth</div>
+            <div class="grid-item">tears</div>
+            <div class="grid-item">to</div>
         </div>
 
         <div class="middle">
-            <div class="middle-item">tem-</div>
-            <div class="middle-item">po-</div>
-            <div class="middle-item">rar-</div>
-            <div class="middle-item">y</div>
-            <div class="middle-item">sleeve</div>
+            <div class="grid-item">tem-</div>
+            <div class="grid-item">po-</div>
+            <div class="grid-item image10">rar-</div>
+            <div class="grid-item">y</div>
+            <div class="grid-item">sleeve</div>
         </div>
 
         <div class="lower">
-            <div class="lower-item rhyme">flapping</div>
-            <div class="lower-item refrain"><a href="page11.html">in the grid.</a></div>
+            <div class="grid-item rhyme">flapping</div>
+            <div class="grid-item refrain"><a href="page11.html">in the grid.</a></div>
         </div>
 
     </div>

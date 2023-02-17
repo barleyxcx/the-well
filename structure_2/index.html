@@ -4,36 +4,43 @@
 <head>
     <title>grid-zal</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function showGrid() {
+        document.getElementById("grid").classList.toggle("active");
+    }
+    </script>
 </head>
 
 <body>
-    <a href ="about.html" class="about">--</a>
-    <div class="main-container">
+        <a href ="about.html" class="about">--</a>
+        <button onclick="showGrid()">switch</button>
+
+    <div id="grid" class="main-container">
         
         <div class="upper">
-            <div class="upper-item image1">-</div>
-            <div class="upper-item image2">-</div>
-            <div class="upper-item image3">-</div>
-            <div class="upper-item image4">-</div>
-            <div class="upper-item image5">-</div>
-            <div class="upper-item image8">-</div>
-            <div class="upper-item">-</div>
-            <div class="upper-item">-</div>
-            <div class="upper-item image9">-</div>
-            <div class="upper-item image10">-</div>
+            <div class="grid-item image1">-</div>
+            <div class="grid-item image2">-</div>
+            <div class="grid-item image3">-</div>
+            <div class="grid-item image4">-</div>
+            <div class="grid-item image5">-</div>
+            <div class="grid-item image8">-</div>
+            <div class="grid-item">-</div>
+            <div class="grid-item">-</div>
+            <div class="grid-item image9">-</div>
+            <div class="grid-item image10">-</div>
         </div>
 
         <div class="middle">
-            <div class="middle-item image6">-</div>
-            <div class="middle-item image7">-</div>
-            <div class="middle-item"><a href="page2.html">grid-zal</a></div>
-            <div class="middle-item image11">-</div>
-            <div class="middle-item">-</div>
+            <div class="grid-item image6">-</div>
+            <div class="grid-item image7">-</div>
+            <div class="grid-item"><a href="page2.html">grid-zal</a></div>
+            <div class="grid-item image11">-</div>
+            <div class="grid-item">-</div>
         </div>
 
         <div class="lower">
-            <div class="lower-item rhyme image12">-</div>
-            <div class="lower-item refrain">-</div>
+            <div class="grid-item rhyme image12">-</div>
+            <div class="grid-item refrain">-</div>
         </div>
 
     </div>

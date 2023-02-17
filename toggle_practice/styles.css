@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#grid {
+    display: flex;
+    gap:10px;
+}
+
+.grid-item {
+    margin-top: 10px;
+    background: green;
+    width: 700px;
+    height: 700px;
+}
+
+#grid.active .grid-item {
+    border: 2px solid;
+}

@@ -4,36 +4,44 @@
 <head>
     <title>grid-zal</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function showGrid() {
+        document.getElementById("grid").classList.toggle("active");
+    }
+    </script>
 </head>
 
 <body>
     <a href ="about.html" class="about">--</a>
-    <div class="main-container">
+
+    <button onclick="showGrid()">switch</button>
+    
+    <div id="grid" class="main-container">
         
         <div class="upper">
-            <div class="upper-item">Ur-</div>
-            <div class="upper-item">ba-</div>
-            <div class="upper-item">ni-</div>
-            <div class="upper-item">tes</div>
-            <div class="upper-item">dance</div>
-            <div class="upper-item">per-</div>
-            <div class="upper-item">pen-</div>
-            <div class="upper-item image5">di-</div>
-            <div class="upper-item">cu</div>
-            <div class="upper-item">lar;</div>
+            <div class="grid-item">Ur-</div>
+            <div class="grid-item">ba-</div>
+            <div class="grid-item">ni-</div>
+            <div class="grid-item">tes</div>
+            <div class="grid-item">dance</div>
+            <div class="grid-item">per-</div>
+            <div class="grid-item">pen-</div>
+            <div class="grid-item">di-</div>
+            <div class="grid-item">cu</div>
+            <div class="grid-item">lar;</div>
         </div>
 
         <div class="middle">
-            <div class="middle-item">Who</div>
-            <div class="middle-item">gets</div>
-            <div class="middle-item">to</div>
-            <div class="middle-item">de-</div>
-            <div class="middle-item">clare</div>
+            <div class="grid-item">Who</div>
+            <div class="grid-item">gets</div>
+            <div class="grid-item image5">to</div>
+            <div class="grid-item">de-</div>
+            <div class="grid-item">clare</div>
         </div>
 
         <div class="lower">
-            <div class="lower-item rhyme">mapping</div>
-            <div class="lower-item refrain"><a href="page6.html">in the grid?</a></div>
+            <div class="grid-item rhyme">mapping</div>
+            <div class="grid-item refrain"><a href="page6.html">in the grid?</a></div>
         </div>
 
     </div>
