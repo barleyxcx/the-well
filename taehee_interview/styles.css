@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    font-family: "degular", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+    background-color: #1d1d1d;
+    align-items: center;
+    /* height: 100%; */
+    animation: bgAnimation 5s ease-out infinite alternate;
+    /* position: relative; */
+    overflow: hidden;
+    /* position: relative; */
+}
+
+/* img {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    z-index: -1;
+} */
+
+#main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4em;
+    gap: 2em;
+    padding: 8em;
+}
+
+#interview {
+max-height: 15em;
+max-width: 35vw;
+/* margin: 6.5em; */
+/* background-color: aqua; */
+overflow: scroll;
+/* padding: 3em; */
+}
+
+.name {
+    font-family: "degular", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+#interview::-webkit-scrollbar {
+    width: 0.3em;
+  }
+   
+  #interview::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+    border: white 1px;
+  }
+   
+  #interview::-webkit-scrollbar-thumb {
+    /* background-color: white; */
+    outline: 1px solid white;
+  }
+
+@keyframes fade {
+    0% {opacity:0;}
+    10% {opacity:1;}
+    90% {opacity:1;}
+    100% {opacity:0;}
+  }  
+
+#sentence {
+    animation: fade 10s ease-out infinite alternate;
+    color: #fff;
+    font-style: italic;
+    /* background-color: antiquewhite; */
+}
+
+p {
+    color: #fff;
+    margin-left: 2em;
+    /* position: absolute;
+    max-width: 65vw; */
+    
+}
+
+#sentence-wrap {
+    flex-grow: 1;
+    /* background:lightblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0 2rem 2rem 2rem; */
+    height: 400px;
+    width: 300px;
+    justify-content:space-evenly;
+    /* margin: 4em; */
+}
+
+@keyframes bgAnimation {
+    0% {background-color:rgb(43, 34, 212);}
+    10% {background-color:rgb(111, 219, 45);}
+    90% {background-color:rgb(250, 39, 215);}
+    100% {background-color:rgb(244, 39, 70);}
+  }  
+
+img {
+    max-height: 450px;
+}
+
+#player {
+    margin: none;
+}
