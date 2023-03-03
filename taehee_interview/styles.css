@@ -22,6 +22,14 @@ body {
     /* position: relative; */
 }
 
+.title {
+    font-family: "degular", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 0.2em;
+}
+
 /* img {
     position: absolute;
     width: 100%;
@@ -33,9 +41,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4em;
+    margin: 2em 4em 2em 4em;
     gap: 2em;
-    padding: 8em;
+    padding: 6em;
 }
 
 #interview {
@@ -83,10 +91,12 @@ font-style: normal;
 
 p {
     color: #fff;
-    margin-left: 2em;
+    /* margin-left: 2em; */
+    margin: 0em 0em 0em 2em;
     /* position: absolute;
     max-width: 65vw; */
     max-width: 59vw;
+    /* display: inline-flex; */
     
 }
 
