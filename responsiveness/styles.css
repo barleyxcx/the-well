@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* margin: 0; */
+    background-color:indianred;
+    color: brown;
+    transition: background 1s;
+}
+
+header, footer, .side, .center {
+    background-color: pink;
+    padding: 10px; 
+    border: 1px solid red;
+}
+
+main {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.side {
+    width: 25%;
+}
+
+.center {
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center; 
+    transition: background 0.5s;
+}
+
+footer:hover {
+    background-color: darkorange;
+}
+
+header {
+    text-align: center; 
+}
+
+/* always set media queries at the bottom of the document otherwise they might override what's below them */
+
+@media screen and (max-width:800px) {
+    body {
+        background-color:cornsilk;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .side {
+        width: 100%;
+    }
+    
+    .center {
+        width: 100%;
+    }
+    
+
+}
+
+@media screen and (max-width:500px) {
+    body {
+        background-color:darksalmon;
+        font-size: 110%;
+    }
+
+
+}
