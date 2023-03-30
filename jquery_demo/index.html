@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>JQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <button class="dark-btn">dark</button>
+    <button class="glow-btn">glow</button>
+    <button class="reveal-btn">reveal</button>
+
+    <div class="flex">
+            <div class="box draggable"></div>
+            <div class="box draggable"></div>
+            <div class="box draggable"></div>
+    </div>
+
+    <img class="poem draggable" src="1.png">
+
+<!-- This is bringing in jquery to the file and website as a library I can access-->
+<script src="jquery-3.6.4.min.js"></script>
+
+<script src="jquery-ui.min.js"></script> 
+
+<!-- This HAS TO BE PLACED underneath the jquery code -->
+<script src="scripts.js"></script> 
+
+<!-- The order is from like bottom to top. Personal script is always at the bottom. Then at the top it goes in order of dependency -->
+
+</body>
+
+
+
+
+
+
+</html>

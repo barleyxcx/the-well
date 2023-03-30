@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: rgb(189, 189, 189);
+    transition: background .5s;
+}
+
+.flex {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(246, 105, 40);
+    
+    border: 1px solid slategrey;
+    transition: background .5s;
+}
+
+.box.dark {
+    /* first we're going to target our tag "box" and if it ALSO has the tag "dark" then we're going to apply these styles */
+    background-color: rgb(47, 10, 112);
+}
+
+body.dark {
+    background: rgb(35, 35, 35);
+}
+
+.box.glow {
+    box-shadow: 0 0 10px 5px greenyellow;
+}
+
+.poem {
+    position: absolute;
+    width: 400px;
+    bottom: 40px;
+    right: 40px;
+    opacity: 0;
+    transition: opacity .5s;
+    
+}
+
+.poem.show {
+    opacity: 100;
+}
+
+.draggable {
+    cursor: grab;
+}
