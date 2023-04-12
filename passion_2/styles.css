@@ -31,7 +31,7 @@ p {
     /* padding: 1em 2em 0 2em ; */
     /* background-color: black; */
     margin: 0;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     overflow: -moz-scrollbars-none; /* hide scrollbar in firefox */
     -ms-overflow-style: none;/* hide scroll in IE */
 }
